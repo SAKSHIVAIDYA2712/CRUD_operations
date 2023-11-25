@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.action-btn {
+  padding: 10px 13px;
+  color: white;
+  border-color: none;
+  border-width: 0;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.update-button {
+  margin-left: 6px;
+  background-color: blue;
+  color: white;
+  font-size: 13px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}

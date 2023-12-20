@@ -15,6 +15,7 @@ export default function Update() {
     axios
       .get("http://localhost:8000/update/" + id)
       .then((res) => {
+        console.log(res);
         setValues({
           ...values,
           name: res.data[0].name,
@@ -32,7 +33,7 @@ export default function Update() {
       .put("http://localhost:8000/updatedata/" + id, values)
       .then((res) => {
         console.log(res);
-        navigate("/");
+        navigate("/details");
       })
       .catch((err) => console.log(err));
   };
@@ -40,7 +41,7 @@ export default function Update() {
     <div className="cust-form">
       <form action="" onSubmit={handleUpdate}>
         <h1>
-          Enter Your <span>Details</span>
+          Update Your <span>Details</span>
         </h1>
         <input
           type="text"

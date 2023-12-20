@@ -17,8 +17,8 @@ export default function Cust() {
     axios
       .post("http://localhost:8000/cust", values)
       .then((res) => {
+        navigate("/details");
         console.log(res);
-        navigate("/");
       })
       .catch((err) => console.log(err));
   };
